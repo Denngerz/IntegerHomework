@@ -4,6 +4,6 @@
 int main()
 {
     Integer task;
-    task.Integer29(5, 10, 3);
+    task.Integer29(40,50,12);
 }
 

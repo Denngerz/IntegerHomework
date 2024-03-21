@@ -62,16 +62,20 @@ void Integer::Integer26(int a, int k) {
 void Integer::Integer29(int a, int b, int c) {
 	int sRectangle = a * b;
 	int sSquare = c * c;
-	int squaresInRectangle = sRectangle / sSquare;
+	int squaresInRectangle;
+	int spaceLeft;
+	if(sSquare > sRectangle) {
+		squaresInRectangle = 0;
+		spaceLeft = sRectangle;
+	}
+	else {
+		squaresInRectangle = sRectangle / sSquare;
+		spaceLeft = sRectangle - (squaresInRectangle * sSquare);
+	}
 	std::cout << squaresInRectangle << std::endl;
-	std::cout << sRectangle % (sSquare * squaresInRectangle);
+	std::cout << spaceLeft;
 }
 
 void Integer::Integer30(int year) {
-	if (year % 100 != 0) {
-		std::cout << (year / 100) + 1;
-	}
-	else {
-		std::cout << year / 100;
-	}
+	std::cout << ((year - 1) / 100) + 1;
 }
