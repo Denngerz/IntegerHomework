@@ -52,10 +52,43 @@ void Integer::Integer23(int time) {
 	std::cout << (time % 3600) / 60;
 }
 
-// 26 works for 24 and 25 as well
-void Integer::Integer26(int a, int k) {
-	// a - 1 january, m - day we are searching for
-	int m = (k + (a - 1)) % 7;
+void Integer::Integer24(int k) {
+	int m = k % 7;
+	if (m == 0) {
+		m = 7;
+	}
+	std::cout << m;
+}
+
+void Integer::Integer25(int k) {
+	int m = (k + 3) % 7;
+	if (m == 0) {
+		m = 7;
+	}
+	std::cout << m;
+}
+
+void Integer::Integer26(int k) {
+	int m = (k + 1) % 7;
+	if (m == 0) {
+		m = 7;
+	}
+	std::cout << m;
+}
+
+void Integer::Integer27(int k) {
+	int m = (k + 5) % 7;
+	if (m == 0) {
+		m = 7;
+	}
+	std::cout << m;
+}
+
+void Integer::Integer28(int n, int k) {
+	int m = (k + (n - 1)) % 7;
+	if (m == 0) {
+		m = 7;
+	}
 	std::cout << m;
 }
 

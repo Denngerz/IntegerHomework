@@ -27,11 +27,11 @@ public:
 	void Integer21(int time);
 	void Integer22();
 	void Integer23(int time);
-	void Integer24();
-	void Integer25();
-	void Integer26(int a, int k);
-	void Integer27();
-	void Integer28();
+	void Integer24(int k);
+	void Integer25(int k);
+	void Integer26(int k);
+	void Integer27(int k);
+	void Integer28(int n, int k);
 	void Integer29(int a, int b , int c);
 	void Integer30(int year);
 };
